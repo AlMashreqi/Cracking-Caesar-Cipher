@@ -3,5 +3,6 @@ In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift ciphe
 
 # Cracking the Cipher
 In the above implementations I have used frequency ananlysis and bruteforce to crack the cipher. 
+
 **Frequency Analysis:** Ananlyzing the distrubution of letters to find the most letter nd then comparing it with the most common letter of English alphabets i.e letter 'E'.
 **Bruteforce:** Self Explanatory 
