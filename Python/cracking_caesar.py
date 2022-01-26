@@ -11,5 +11,5 @@ def crack_caesar(cipher):
         print(f"[?] Key: {key} => Decrypted Text: {plain_text}")
 
 if __name__ == '__main__':
-    encrypted = "VDXRRG"
-    crack_caesar(encrypted)
+    encrypted = "Vdxrrg"
+    crack_caesar(encrypted.upper())

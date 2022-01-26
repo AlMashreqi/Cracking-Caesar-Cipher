@@ -1,6 +1,6 @@
 import sys
 
-ALPHABET = "-ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+ALPHABET = " -ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 KEY = 3
 
 def caesar_encrypt(plain_text):
