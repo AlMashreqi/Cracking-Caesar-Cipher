@@ -6,6 +6,7 @@ public class Main {
 		CrackingCaesar ciphy = new CrackingCaesar();
 		FrequencyAnalysis analy = new FrequencyAnalysis();
 		CrackingCeasarFA cracfa = new CrackingCeasarFA();
+		LanguageDetector ld = new LanguageDetector();
 		
 //		if(args.length < 3 ) {
 //			System.out.println("[-]Invalid Args");
@@ -26,7 +27,11 @@ public class Main {
 			case "-ac":
 				System.out.println(cipher.decrypt(args[1], cracfa.crack(args[1])));
 			case "-a":
-				analy.showAnalysis(args[1]);				
+				analy.showAnalysis(args[1]);
+			case "dt":
+				System.out.println(ld.isEng(args[1]));
+			case "bc":
+				System.out.println(ld.isEng(ciphy.crack(args[1])));
 		}
 	}
 }

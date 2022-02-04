@@ -4,7 +4,7 @@ public class CrackingCaesar {
 	
 	public final String ALPHABET = " ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	
-	public void crack(String cipher) {
+	public String crack(String cipher) {
 		for(int i=0; i<ALPHABET.length(); i++) {
 			String plain_text = "";
 			
@@ -16,6 +16,7 @@ public class CrackingCaesar {
 				plain_text += ALPHABET.charAt(decryptedIndex);				
 			}
 			System.out.format("[?] Key: %d => Decrypted Text: %s", i, plain_text);
+			return plain_text;
 		}
 	}
 	

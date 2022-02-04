@@ -1,4 +1,4 @@
-ALPHABET = " ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 def crack_caesar(cipher):
     for key in range(len(ALPHABET)):
@@ -11,5 +11,5 @@ def crack_caesar(cipher):
         print(f"[?] Key: {key} => Decrypted Text: {plain_text}")
 
 if __name__ == '__main__':
-    encrypted = "Vdxrrg"
+    encrypted = "abdxjkls"
     crack_caesar(encrypted.upper())
